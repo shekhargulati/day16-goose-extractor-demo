@@ -28,7 +28,7 @@
   </div>
 
 <div id="main" class="container">
-	<form class="form-horizontal" role="form">
+	<form class="form-horizontal" role="form" id="myform">
 		<div class="form-group">
 			<div class="col-lg-4">
     			<input type="url" id="url" name="url"  class="form-control" placeholder="Url you want to parse" required>
@@ -50,7 +50,7 @@
 
 <script type="text/javascript" src="static/js/jquery.js"></script>
 <script type="text/javascript">
-	$("#submitUrl").on("click", function(event){
+	$("#myform").on("submit", function(event){
 		$("#result").empty();
 		event.preventDefault();
 		$('#loading').show();
