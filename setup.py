@@ -6,5 +6,5 @@ setup(name='GooseExtractorDemo',
       author='Shekhar Gulati',
       author_email='example@example.com',
       url='http://www.python.org/sigs/distutils-sig/',
-     install_requires=['goose-extractor','flask'],
+      install_requires=['flask','goose-extractor'],
      )
