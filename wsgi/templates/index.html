@@ -28,12 +28,18 @@
   </div>
 
 <div id="main" class="container">
-	<div class="col-lg-4">
-    	<input type="url" id="url" name="url"  class="form-control" placeholder="Url you want to parse" required>
-  	</div>
-	<input type="submit" value="Extract" id="submitUrl" class="btn btn-success">
-	
+	<form class="form-horizontal" role="form">
+		<div class="form-group">
+			<div class="col-lg-4">
+    			<input type="url" id="url" name="url"  class="form-control" placeholder="Url you want to parse" required>
+  			</div>
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Extract" id="submitUrl" class="btn btn-success">
+		</div>
+	</form>
 </div>
+
 <div id="loading" style="display:none;" class="container">
     <img src="/static/images/loader.gif" alt="Please wait.." />
 </div>
